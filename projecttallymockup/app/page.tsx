@@ -1,6 +1,9 @@
+import Header from "@/components/Header";
+import Link from "next/link";
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto p-6 justify-center">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col p-6 ">
+      <Header title={"Tally"} />
       <div>
         <h1 className="text-4xl text-slate-900">Login Page</h1>
       </div>
@@ -19,6 +22,13 @@ export default function Home() {
           className="border rounded bg-slate-200"
           placeholder="Password"
         />
+      </div>
+      <div className="mt-auto flex justify-center">
+        <Link href={"/cardCount"}>
+          <button className="rounded-md bg-[#3A3A3A] text-[#FFF6F6]">
+            Log-In
+          </button>
+        </Link>
       </div>
     </main>
   );
