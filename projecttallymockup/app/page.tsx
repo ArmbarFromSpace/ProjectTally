@@ -5,9 +5,6 @@ export default function Home() {
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col p-6 ">
       <Header title={"Tally"} />
       <div>
-        <h1 className="text-4xl text-slate-900">Login Page</h1>
-      </div>
-      <div>
         <p>Username</p>
         <input
           type="text"
@@ -23,7 +20,7 @@ export default function Home() {
           placeholder="Password"
         />
       </div>
-      <div className="mt-auto flex justify-center">
+      <div className="mt-auto flex justify-center my-auto">
         <Link href={"/cardCount"}>
           <button className="rounded-md bg-[#3A3A3A] text-[#FFF6F6]">
             Log-In
