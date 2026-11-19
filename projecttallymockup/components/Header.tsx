@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-const Header = () => {
-  const pathname = usePathname();
-  if (pathname === "/cardCount") return null;
+interface headerProps {
+  title: string;
+}
+
+export default function Header() {
   return (
     <div>
       <Link href={`/`}>
@@ -12,6 +13,4 @@ const Header = () => {
       </Link>
     </div>
   );
-};
-
-export default Header;
+}
