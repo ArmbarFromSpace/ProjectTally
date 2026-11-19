@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex-1 justify-between">
       <Link href={`/cardCount`}>
-        <button className="font-bitcount">Counter</button>
+        <button className="font-bitcount border">Counter</button>
       </Link>
       <Link href={`/countTrainer`}>
         <button className="font-bitcount">Trainer</button>
