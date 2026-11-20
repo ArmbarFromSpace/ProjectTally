@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bitcount+Prop+Single:wght@100..900&display=swap");
 @import "tailwindcss";
-/* 
+
 @theme {
-  font-bitcount: "Bitcount Prop Single", system-ui, sans-serif;
-} */
+  --font-big-shoulders: "Big Shoulders", sans-serif;
+  --font-bitcount: "Bitcount Prop Single", sans-serif;
+}
