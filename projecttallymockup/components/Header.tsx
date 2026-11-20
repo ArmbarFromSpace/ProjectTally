@@ -17,7 +17,11 @@ export default function Header({ title }: headerProps) {
         height={100}
         className="mx-2"
       />
-      <h1 className="font-big-shoulders text-5xl text-[#E4D71B]">{title}</h1>
+      <h1 className="flex flex-col items-center text-center font-big-shoulders text-5xl text-[#E4D71B]">
+        {title.split(/\s+/).map((word, index) => (
+          <span key={`${word}-${index}`}>{word}</span>
+        ))}
+      </h1>
       <Image
         src={Chips}
         alt="Chips"
