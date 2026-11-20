@@ -21,8 +21,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${bigShoulders.variable} ${bitcount.variable}`}>
       <body className="min-h-dvh flex flex-col bg-[#104D12]">
-        <main className="mx-auto flex w-full max-w-5xl flex-col p-6">
-          <div className="flex-1">{children}</div>
+        <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col p-4 sm:p-6">
+          <div className="min-w-0 flex-1">{children}</div>
         </main>
       </body>
     </html>

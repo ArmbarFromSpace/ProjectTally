@@ -9,15 +9,15 @@ interface headerProps {
 
 export default function Header({ title }: headerProps) {
   return (
-    <div className="flex justify-center flex-row ">
+    <div className="flex items-center justify-center gap-1 sm:gap-3">
       <Image
         src={Cards}
         alt="Cards"
         width={100}
         height={100}
-        className="mx-2"
+        className="mx-1 h-auto w-10 sm:w-16 md:w-24"
       />
-      <h1 className="flex flex-col items-center text-center font-big-shoulders text-5xl text-[#E4D71B]">
+      <h1 className="flex flex-col items-center text-center font-big-shoulders text-3xl leading-none text-[#E4D71B] sm:text-5xl">
         {title.split(/\s+/).map((word, index) => (
           <span key={`${word}-${index}`}>{word}</span>
         ))}
@@ -27,7 +27,7 @@ export default function Header({ title }: headerProps) {
         alt="Chips"
         width={100}
         height={100}
-        className="mx-2"
+        className="mx-1 h-auto w-10 sm:w-16 md:w-24"
       />
     </div>
   );

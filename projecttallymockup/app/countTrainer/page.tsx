@@ -6,21 +6,26 @@ export default function CountTrainer() {
   return (
     <div>
       <Header title={"Mental Trainer"} />
-      <div className="flex text-center justify-center">
-        <h1 className="bg-[#D9D9D9]/50 rounded-2xl text-5xl font-big-shoulders py-5 px-9 text-[#DAE41B] my-4">
+      <div className="flex justify-center text-center">
+        <h1 className="my-4 rounded-2xl bg-[#D9D9D9]/50 px-5 py-4 text-3xl font-big-shoulders text-[#DAE41B] sm:px-9 sm:py-5 sm:text-5xl">
           Show Count
         </h1>
       </div>
       <div className="flex justify-center">
-        <Image src={Spade} alt="Ace of Spades" width={100} className="my-3" />
+        <Image
+          src={Spade}
+          alt="Ace of Spades"
+          width={100}
+          className="my-3 h-auto w-20 sm:w-24"
+        />
       </div>
-      <div className="flex text-center justify-center">
-        <h2 className="bg-[#02B732] rounded-2xl text-3xl font-big-shoulders px-5 py-4 my-4">
+      <div className="flex justify-center text-center">
+        <h2 className="my-4 rounded-2xl bg-[#02B732] px-4 py-3 text-2xl font-big-shoulders sm:px-5 sm:py-4 sm:text-3xl">
           Deal Next
         </h2>
       </div>
-      <div className="flex text-center justify-center">
-        <h2 className="bg-[#FF4444] rounded-2xl text-3xl font-big-shoulders px-5 py-4 my-4">
+      <div className="flex justify-center text-center">
+        <h2 className="my-4 rounded-2xl bg-[#FF4444] px-4 py-3 text-2xl font-big-shoulders sm:px-5 sm:py-4 sm:text-3xl">
           Reset Trainer
         </h2>
       </div>

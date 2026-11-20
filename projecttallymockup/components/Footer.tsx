@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex w-full justify-between">
-      <Link href={`/cardCount`}>
-        <button className="text-4xl text-[#FFF6F6] font-bitcount bg-[#3A3A3A] rounded-2xl py-4 px-7">
+    <footer className="mt-4 flex w-full gap-3">
+      <Link className="flex-1" href={`/cardCount`}>
+        <button className="w-full whitespace-nowrap rounded-2xl bg-[#3A3A3A] px-1 py-2 text-lg font-bitcount text-[#FFF6F6] sm:px-4 sm:py-3 sm:text-3xl md:px-7 md:py-4 md:text-4xl">
           Counter
         </button>
       </Link>
-      <Link href={`/countTrainer`}>
-        <button className="text-4xl font-bitcount bg-[#D9D9D9] rounded-2xl py-4 px-7">
+      <Link className="flex-1" href={`/countTrainer`}>
+        <button className="w-full whitespace-nowrap rounded-2xl bg-[#D9D9D9] px-1 py-2 text-lg font-bitcount sm:px-4 sm:py-3 sm:text-3xl md:px-7 md:py-4 md:text-4xl">
           Trainer
         </button>
       </Link>
