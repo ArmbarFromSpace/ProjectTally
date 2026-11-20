@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 export default function CardCount() {
   return (
-    <div className="">
+    <div>
       <Header title={"Card Counter"} />
-      <div className="mr-auto my-5 flex w-fit max-w-full flex-col items-center rounded-2xl bg-[#D9D9D9]/50 px-8 py-5">
+      <div className="mx-auto my-5 flex w-fit max-w-full flex-col items-center justify-center rounded-2xl bg-[#D9D9D9]/50 px-8 py-5">
         <h1 className="font-big-shoulders text-7xl text-[#DAE41B]">0</h1>
         <h1 className="font-big-shoulders text-7xl text-[#DAE41B]">
           Current Count
