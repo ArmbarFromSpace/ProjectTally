@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running Count</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="mental-page">
+    <div class="app">
+      <header class="header">
+        <div class="cards" aria-hidden="true">
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&spades;</span>
+        </div>
+        <h1>Running<br />Count</h1>
+        <div class="chips" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </header>
+
+      <main class="content">
+        <button type="button" class="box show-count">Show Count</button>
+
+        <div class="card" role="img" aria-label="Spade card">&spades;</div>
+
+        <button type="button" class="deal">Deal Next</button>
+
+        <button type="button" class="reset">Reset Trainer</button>
+      </main>
+
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="one-line">Counter</a>
+        <a href="trainer.html">Value Trainer</a>
+        <a href="mental.html" class="current" aria-current="page"
+          >Running Count</a
+        >
+      </nav>
+    </div>
+  </body>
+</html>

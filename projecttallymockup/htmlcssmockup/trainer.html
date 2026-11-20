@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Value Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="trainer-page">
+    <div class="app">
+      <header class="header">
+        <div class="cards" aria-hidden="true">
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&spades;</span>
+        </div>
+        <h1>Value<br />Trainer</h1>
+        <div class="chips" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="scores">
+          <div class="box">
+            <span>Right</span>
+            <span>0</span>
+          </div>
+          <div class="box">
+            <span>Wrong</span>
+            <span>0</span>
+          </div>
+        </div>
+
+        <div class="card" role="img" aria-label="Spade card">&spades;</div>
+
+        <div class="choices">
+          <button type="button">-1</button>
+          <button type="button">0</button>
+          <button type="button">+1</button>
+        </div>
+
+        <button type="button" class="reset">Reset Trainer</button>
+      </main>
+
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="one-line">Counter</a>
+        <a href="trainer.html" class="current" aria-current="page"
+          >Value Trainer</a
+        >
+        <a href="mental.html">Running Count</a>
+      </nav>
+    </div>
+  </body>
+</html>

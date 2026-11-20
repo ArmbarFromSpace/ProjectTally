@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="counter-page">
+    <div class="app">
+      <header class="header">
+        <div class="cards" aria-hidden="true">
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&hearts;</span>
+          <span>&spades;</span>
+        </div>
+        <h1>Card<br />Counter</h1>
+        <div class="chips" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="box counter" aria-live="polite">
+          <div class="number">0</div>
+          <div class="label">Current Count</div>
+        </div>
+
+        <div class="counts">
+          <button type="button">
+            <b>-1</b>
+            <small>10, J, Q, K, A</small>
+          </button>
+          <button type="button" class="plus">
+            <b>+1</b>
+            <small>2, 3, 4, 5, 6</small>
+          </button>
+        </div>
+
+        <button type="button" class="reset">Reset Count</button>
+      </main>
+
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="one-line current" aria-current="page"
+          >Counter</a
+        >
+        <a href="trainer.html">Value Trainer</a>
+        <a href="mental.html">Running Count</a>
+      </nav>
+    </div>
+  </body>
+</html>
