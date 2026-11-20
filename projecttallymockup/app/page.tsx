@@ -35,7 +35,9 @@ export default function Home() {
           </button>
         </Link>
         <p className="font-bitcount text-sm">
-          <span className="text-[#FFF6F6] mx-1">Don't have an account?</span>
+          <span className="text-[#FFF6F6] mx-1">
+            Don&apos;t have an account?
+          </span>
           <span className="text-[#FF0004]">Sign-Up</span>
         </p>
       </div>
