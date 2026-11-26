@@ -9,7 +9,7 @@ export default function Header({pageTitle}: Props) {
     return (
         <View>
             <View>
-                <Image source={require('./assets/Cards.png')}/>
+                <Image source={require('../assets/Cards.png')}/>
             </View>
             <View>
                 <Text>
@@ -17,7 +17,7 @@ export default function Header({pageTitle}: Props) {
                 </Text>
             </View>
             <View>
-                <Image source={require('./assets/Chips.png')}/>
+                <Image source={require('../assets/Chips.png')}/>
             </View>
         </View> 
     );
