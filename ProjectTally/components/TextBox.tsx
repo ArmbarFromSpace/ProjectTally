@@ -20,7 +20,7 @@ export default function TextBox({
         <Text>{BoxText}</Text>
         <View>
           <TextInput
-            accesibilitylabel={BoxText}
+            accessibilityLabel={BoxText}
             placeholder={`Enter ${PlcaeHolderText}`}
             value={AccountInformation}
             onChangeText={onChangeText}
@@ -34,6 +34,6 @@ export default function TextBox({
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    marginleft: "10%",
+    marginLeft: "10%",
   },
 });
