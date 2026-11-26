@@ -1,16 +1,20 @@
 import { useFonts } from "expo-font";
+import { useRouter } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
-  const [fontsLoaded] = useFonts({
-    Bitcount: require("../../fonts/static/BitcountPropSingle-Regular.ttf"),
-  });
 
-  if (!fontsLoaded) return null;
+  // const [fontsLoaded] = useFonts({
+  //   Bitcount: require("../../fonts/static/BitcountPropSingle-Regular.ttf"),
+  // });
+
+  // if (!fontsLoaded) return null;
+
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
-      <Pressable style={styles.button}>
+      <Pressable style={styles.button} onPress={() => router.replace('/cardCounter')}>
         <Text style={styles.text}>Counter</Text>
       </Pressable>
     </View>

@@ -11,23 +11,24 @@ export default function Footer() {
     const pathname = usePathname(); 
 
     return (
-        <View>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-around', padding: 10 }}>
+
             <Pressable onPress={() => router.replace('/cardCounter')}>
-            <View>
+            <View style={{backgroundColor: pathname === '/cardCounter' ? 'gray' : 'white', padding: 15, borderRadius: 5, alignItems: 'center' }}>
                 <Text>
                     Counter
                 </Text>
             </View>
             </Pressable>
-            <Pressable onPress={() => router.replace('/cardCounter')}>
-            <View>
+            <Pressable onPress={() => router.replace('/countTrainer')}>
+            <View style={{backgroundColor: pathname === '/countTrainer' ? 'gray' : 'white', padding: 15, borderRadius: 5, alignItems: 'center' }}>
                 <Text>
                     Count Trainer
                 </Text>
             </View>
             </Pressable>
-            <Pressable onPress={() => router.replace('/cardCounter')}>
-            <View>
+            <Pressable onPress={() => router.replace('/mentalTrainer')}>
+            <View style={{backgroundColor: pathname === '/mentalTrainer' ? 'gray' : 'white', padding: 15, borderRadius: 5, alignItems: 'center' }}>
                 <Text>
                     Mental Trainer
                 </Text>

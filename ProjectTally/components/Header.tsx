@@ -7,12 +7,12 @@ type Props = {
 // Header component definition which accepts a title prop and displays our logo
 export default function Header({pageTitle}: Props) {
     return (
-        <View>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10 }}>
             <View>
                 <Image source={require('../assets/Cards.png')}/>
             </View>
             <View>
-                <Text>
+                <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
                     {pageTitle}
                 </Text>
             </View>
